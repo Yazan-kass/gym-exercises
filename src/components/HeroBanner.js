@@ -26,7 +26,25 @@ const HeroBanner = () => {
       >
         {/* Left Column: Text & CTAs */}
         <Stack spacing={2.5} sx={{ maxWidth: { lg: "640px", xs: "100%" }, zIndex: 2 }}>
-          
+          <Stack direction="row" spacing={1} alignItems="center">
+            <Chip
+              icon={<LocalFireDepartmentIcon sx={{ color: "#FF2625 !important" }} />}
+              label="ELITE FITNESS CLUB"
+              sx={{
+                fontWeight: 800,
+                fontSize: "13px",
+                letterSpacing: "1.5px",
+                bgcolor: (theme) =>
+                  theme.palette.mode === "dark"
+                    ? "rgba(255, 38, 37, 0.15)"
+                    : "rgba(255, 38, 37, 0.1)",
+                color: "primary.main",
+                border: "1px solid",
+                borderColor: "primary.main",
+                py: 2,
+              }}
+            />
+          </Stack>
 
           {/* Main Heading */}
           <Typography
